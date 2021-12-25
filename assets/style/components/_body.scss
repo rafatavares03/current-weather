@@ -1,0 +1,23 @@
+@use '../abstract' as abs;
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @include abs.flex($direction: column);
+  background-color: abs.$body-bg-color;
+  font-family: abs.$font;
+  min-height: abs.$body-height;
+  padding: abs.$body-padding;
+  text-align: abs.$body-txt-align;
+
+  .title {
+    color: abs.$title-color;
+    margin-bottom: abs.$title-margin;
+  }
+}
