@@ -1,0 +1,14 @@
+@use '../abstract' as abs;
+
+.form {
+  width: abs.$form-width;
+
+  .search {
+    background-color: abs.$search-bg-color;
+    border: abs.$search-border;
+    color: abs.$search-color;
+    outline: abs.$no-outline;
+    padding: abs.$search-padding;
+    width: abs.$search-width;
+  }
+}

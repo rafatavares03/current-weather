@@ -21,4 +21,16 @@ body .title {
   margin-bottom: 2rem;
 }
 
+.form {
+  width: 100%;
+}
+.form .search {
+  background-color: #0960A3;
+  border: groove 2px #19E4FF;
+  color: #19E4FF;
+  outline: 0;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */

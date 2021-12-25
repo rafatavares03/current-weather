@@ -3,6 +3,11 @@ $light-blue: #19E4FF;
 
 $font: 'Unbutu', sans-serif;
 
+$default-box-model: border-box;
+$no-margin: 0;
+$no-outline: 0;
+$no-padding: 0;
+
 
 
 
@@ -10,6 +15,16 @@ $body-bg-color: $dark-blue;
 $body-height: 100vh;
 $body-padding: 0.7rem;
 $body-txt-align: center;
+
+
+$form-width: 100%;
+
+
+$search-bg-color: $dark-blue;
+$search-border: groove 2px $light-blue;
+$search-color: $light-blue;
+$search-padding: 0.5rem 1rem;
+$search-width: 100%;
 
 
 $title-color: $light-blue;
