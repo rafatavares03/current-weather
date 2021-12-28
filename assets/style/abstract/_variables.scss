@@ -1,5 +1,6 @@
 $dark-blue: #0960A3;
 $light-blue: #19E4FF;
+$white: #FFF;
 
 $font: 'Unbutu', sans-serif;
 
@@ -17,10 +18,10 @@ $body-padding: 0.7rem;
 $body-txt-align: center;
 
 
-$button-bg-color: $dark-blue;
-$button-border: groove 2px $light-blue;
-$button-color: $light-blue;
-$button-padding: 0.5rem 1rem;
+$button-bg-color: $white;
+$button-border: solid 2px $light-blue;
+$button-color: $dark-blue;
+$button-padding: 0.5rem 1.5rem;
 
 
 $desc-font-size: calc(1rem + 0.5vw);
@@ -40,7 +41,7 @@ $label-color: $light-blue;
 $label-font-size: 0.95rem;
 $label-left: 1rem;
 $label-position: absolute;
-$label-top: calc(50% - 0.6rem);
+$label-top: calc(50% - 0.50rem);
 $label-transition: 0.25s;
 
 

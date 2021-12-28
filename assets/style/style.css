@@ -55,14 +55,14 @@ body .desc {
   font-size: 0.95rem;
   left: 1rem;
   position: absolute;
-  top: calc(50% - 0.6rem);
+  top: calc(50% - 0.5rem);
   transition: 0.25s;
 }
 .form .button {
-  background-color: #0960A3;
-  border: groove 2px #19E4FF;
-  color: #19E4FF;
-  padding: 0.5rem 1rem;
+  background-color: #FFF;
+  border: solid 2px #19E4FF;
+  color: #0960A3;
+  padding: 0.5rem 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
