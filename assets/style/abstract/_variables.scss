@@ -17,15 +17,46 @@ $body-padding: 0.7rem;
 $body-txt-align: center;
 
 
+$button-bg-color: $dark-blue;
+$button-border: groove 2px $light-blue;
+$button-color: $light-blue;
+$button-padding: 0.5rem 1rem;
+
+
+$desc-font-size: calc(1rem + 0.5vw);
+$desc-font-weight: 300;
+$desc-margin: 1.5rem;
+
+
 $form-width: 100%;
+$form-max-width: 60ch;
+
+
+$form-item-margin: 1rem;
+$form-item-position: relative;
+
+
+$label-color: $light-blue;
+$label-font-size: 0.95rem;
+$label-left: 1rem;
+$label-position: absolute;
+$label-top: calc(50% - 0.6rem);
+$label-transition: 0.25s;
+
+
+$label-floating-font-size: 0.85rem;
+$label-floating-top: 0.2rem;
 
 
 $search-bg-color: $dark-blue;
 $search-border: groove 2px $light-blue;
 $search-color: $light-blue;
-$search-padding: 0.5rem 1rem;
+$search-padding: 1rem;
 $search-width: 100%;
 
 
-$title-color: $light-blue;
-$title-margin: 2rem;
+$text-color: $light-blue;
+
+
+$title-font-size: calc(2rem + 2vw);
+$title-margin: 3rem;

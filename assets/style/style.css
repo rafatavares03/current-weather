@@ -16,21 +16,53 @@ body {
   padding: 0.7rem;
   text-align: center;
 }
-body .title {
+body h1,
+body p {
   color: #19E4FF;
-  margin-bottom: 2rem;
+}
+body .title {
+  font-size: calc(2rem + 2vw);
+  margin-bottom: 3rem;
+}
+body .desc {
+  font-size: calc(1rem + 0.5vw);
+  font-weight: 300;
+  margin-bottom: 1.5rem;
 }
 
 .form {
+  max-width: 60ch;
   width: 100%;
+}
+.form .form-item {
+  margin-bottom: 1rem;
+  position: relative;
 }
 .form .search {
   background-color: #0960A3;
   border: groove 2px #19E4FF;
   color: #19E4FF;
   outline: 0;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   width: 100%;
+}
+.form .search:focus + .label-float, .form .search:not(:placeholder-shown) + .label-float {
+  font-size: 0.85rem;
+  top: 0.2rem;
+}
+.form .label-float {
+  color: #19E4FF;
+  font-size: 0.95rem;
+  left: 1rem;
+  position: absolute;
+  top: calc(50% - 0.6rem);
+  transition: 0.25s;
+}
+.form .button {
+  background-color: #0960A3;
+  border: groove 2px #19E4FF;
+  color: #19E4FF;
+  padding: 0.5rem 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

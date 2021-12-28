@@ -1,7 +1,13 @@
 @use '../abstract' as abs;
 
 .form {
+  max-width: abs.$form-max-width;
   width: abs.$form-width;
+
+  .form-item {
+    margin-bottom: abs.$form-item-margin;
+    position: abs.$form-item-position;
+  }
 
   .search {
     background-color: abs.$search-bg-color;
@@ -10,5 +16,27 @@
     outline: abs.$no-outline;
     padding: abs.$search-padding;
     width: abs.$search-width;
+
+    &:focus + .label-float,
+    &:not(:placeholder-shown) + .label-float {
+      font-size: abs.$label-floating-font-size;
+      top: abs.$label-floating-top;
+    }
+  }
+
+  .label-float {
+    color: abs.$label-color;
+    font-size: abs.$label-font-size;
+    left: abs.$label-left;
+    position: abs.$label-position;
+    top: abs.$label-top;
+    transition: abs.$label-transition;
+  }
+
+  .button {
+    background-color: abs.$button-bg-color;
+    border: abs.$button-border;
+    color: abs.$button-color;
+    padding: abs.$button-padding;
   }
 }

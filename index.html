@@ -9,11 +9,16 @@
   <title>Previsão do Tempo</title>
 </head>
 <body>
-  <h1 class="title">Pesquise uma cidade para ver a previsão do tempo</h1>
-  <form class="form">
-    <input type="text" class="search" id="search" placeholder=" "/>
-    <label for="search"></label>
+  <h1 class="title">Previsão do tempo</h1>
+  <p class="desc">Pesquise uma cidade para ver como está a previsão</p>
+  <form class="form" id="searchForm">
+    <div class="form-item">
+      <input type="text" class="search" id="search" placeholder=" "/>
+      <label class="label-float" for="search">Pesquise alguma cidade...</label>
+    </div>
+    <button class="button">Pesquisar</button>
   </form>
+  <script type="text/javascript" src="assets/js/config.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 </html>
