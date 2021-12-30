@@ -63,6 +63,7 @@ body .title {
   margin-top: 1rem;
   max-width: 60ch;
   padding: 2rem 0rem;
+  visibility: hidden;
   width: 100%;
 }
 .results .city {
