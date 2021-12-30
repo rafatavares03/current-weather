@@ -1,6 +1,8 @@
+$darkest-blue: #074270;
 $dark-blue: #0960A3;
-$light-blue: #19E4FF;
-$white: #FFF;
+$light-blue: #19e4ff;
+$lighter-blue: #B3ECFD;
+$transparent-blue: #B3ECFD88;
 
 $font: 'Unbutu', sans-serif;
 
@@ -18,15 +20,22 @@ $body-padding: 0.7rem;
 $body-txt-align: center;
 
 
-$button-bg-color: $white;
+$button-bg-color: $lighter-blue;
 $button-border: solid 2px $light-blue;
 $button-color: $dark-blue;
 $button-padding: 0.5rem 1.5rem;
 
 
-$desc-font-size: calc(1rem + 0.5vw);
-$desc-font-weight: 300;
-$desc-margin: 1.5rem;
+$city-color: $lighter-blue;
+$city-font-size: 1.3rem;
+$city-font-weight: 600;
+
+
+$container-margin: 1rem;
+
+
+$container-p-color: $transparent-blue;
+$container-p-margin: 0.3rem;
 
 
 $form-width: 100%;
@@ -49,6 +58,14 @@ $label-floating-font-size: 0.85rem;
 $label-floating-top: 0.2rem;
 
 
+$results-bg-color: $darkest-blue;
+$results-border: groove 2px $light-blue;
+$results-margin: 1rem;
+$results-max-width: 60ch;
+$results-padding: 2rem 0rem;
+$results-width: 100%;
+
+
 $search-bg-color: $dark-blue;
 $search-border: groove 2px $light-blue;
 $search-color: $light-blue;
@@ -56,8 +73,23 @@ $search-padding: 1rem;
 $search-width: 100%;
 
 
-$text-color: $light-blue;
+$status-h1-color: $light-blue;
+$status-h1-font-size: 1.3rem;
+$status-h1-font-weight: 400;
+$status-h1-margin: 0.5rem;
 
 
+$title-color: $light-blue;
 $title-font-size: calc(2rem + 2vw);
 $title-margin: 3rem;
+
+
+$temp-h1-color: $light-blue;
+$temp-h1-font-size: 2.5rem;
+
+
+$wind-border: dotted 2px $lighter-blue;
+$wind-padding: 0.5rem;
+
+
+$wind-legend-color: $lighter-blue;

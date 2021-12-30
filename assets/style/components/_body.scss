@@ -16,19 +16,10 @@ body {
   padding: abs.$body-padding;
   text-align: abs.$body-txt-align;
 
-  h1,
-  p {
-    color: abs.$text-color;
-  }
 
   .title {
+    color: abs.$title-color;
     font-size: abs.$title-font-size;
     margin-bottom: abs.$title-margin;
-  }
-
-  .desc {
-    font-size: abs.$desc-font-size;
-    font-weight: abs.$desc-font-weight;
-    margin-bottom: abs.$desc-margin;
   }
 }

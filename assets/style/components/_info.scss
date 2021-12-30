@@ -1,0 +1,51 @@
+@use '../abstract' as abs;
+
+.results {
+  background-color: abs.$results-bg-color;
+  border: abs.$results-border;
+  margin-top: abs.$results-margin;
+  max-width: abs.$results-max-width;
+  padding: abs.$results-padding;
+  width: abs.$results-width;
+
+  .city {
+    color: abs.$city-color;
+    font-size: abs.$city-font-size;
+    font-weight: abs.$city-font-weight;
+  }
+}
+
+.container {
+  @include abs.flex($justify: space-around);
+  margin-bottom: abs.$container-margin;
+
+  p {
+    color: abs.$container-p-color;
+    margin-top: abs.$container-p-margin;
+  }
+}
+
+.status {
+  h1 {
+    color: abs.$status-h1-color;
+    font-size: abs.$status-h1-font-size;
+    font-weight: abs.$status-h1-font-weight;
+    margin-bottom: abs.$status-h1-margin;
+  }
+}
+
+.temp {
+  h1 {
+    color: abs.$temp-h1-color;
+    font-size: abs.$temp-h1-font-size;
+  }
+}
+
+.wind {
+  border: abs.$wind-border;
+  padding: abs.$wind-padding;
+
+  legend {
+    color: abs.$wind-legend-color;
+  }
+}

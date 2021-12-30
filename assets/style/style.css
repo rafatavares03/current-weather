@@ -16,18 +16,10 @@ body {
   padding: 0.7rem;
   text-align: center;
 }
-body h1,
-body p {
-  color: #19E4FF;
-}
 body .title {
+  color: #19e4ff;
   font-size: calc(2rem + 2vw);
   margin-bottom: 3rem;
-}
-body .desc {
-  font-size: calc(1rem + 0.5vw);
-  font-weight: 300;
-  margin-bottom: 1.5rem;
 }
 
 .form {
@@ -40,8 +32,8 @@ body .desc {
 }
 .form .search {
   background-color: #0960A3;
-  border: groove 2px #19E4FF;
-  color: #19E4FF;
+  border: groove 2px #19e4ff;
+  color: #19e4ff;
   outline: 0;
   padding: 1rem;
   width: 100%;
@@ -51,7 +43,7 @@ body .desc {
   top: 0.2rem;
 }
 .form .label-float {
-  color: #19E4FF;
+  color: #19e4ff;
   font-size: 0.95rem;
   left: 1rem;
   position: absolute;
@@ -59,10 +51,56 @@ body .desc {
   transition: 0.25s;
 }
 .form .button {
-  background-color: #FFF;
-  border: solid 2px #19E4FF;
+  background-color: #B3ECFD;
+  border: solid 2px #19e4ff;
   color: #0960A3;
   padding: 0.5rem 1.5rem;
+}
+
+.results {
+  background-color: #074270;
+  border: groove 2px #19e4ff;
+  margin-top: 1rem;
+  max-width: 60ch;
+  padding: 2rem 0rem;
+  width: 100%;
+}
+.results .city {
+  color: #B3ECFD;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.container p {
+  color: #B3ECFD88;
+  margin-top: 0.3rem;
+}
+
+.status h1 {
+  color: #19e4ff;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.temp h1 {
+  color: #19e4ff;
+  font-size: 2.5rem;
+}
+
+.wind {
+  border: dotted 2px #B3ECFD;
+  padding: 0.5rem;
+}
+.wind legend {
+  color: #B3ECFD;
 }
 
 /*# sourceMappingURL=style.css.map */

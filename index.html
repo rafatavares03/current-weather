@@ -10,7 +10,6 @@
 </head>
 <body>
   <h1 class="title">Previsão do tempo</h1>
-  <p class="desc">Pesquise uma cidade para ver como está a previsão</p>
   <form class="form" id="searchForm">
     <div class="form-item">
       <input type="text" class="search" id="search" placeholder=" "/>
@@ -18,7 +17,31 @@
     </div>
     <button class="button">Pesquisar</button>
   </form>
-  <div class="weather"></div>
+  <fieldset class="results">
+    <legend class="city">São Paulo, BR</legend>
+    <div class="container">
+      <div class="status">
+        <h1>Céu nublado</h1>
+        <img alt="Clima"/>
+      </div>
+      <div class="temp">
+        <h1>28ºC</h1>
+        <p>Sensação: 35º</p>
+        <p>MAX: tanan MIN: tananan</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="extra">
+        <p class="umidity">Umidade: 50%</p>
+        <p class="pressure">Pressão 2hPa</p>
+      </div>
+      <fieldset class="wind">
+        <legend>Ventos</legend>
+        <p class="wind-speed">Velocidade: Tal</p>
+        <p class="wind-deg">Angulo: Tal</p>
+      </fieldset>
+    </div>
+  </fieldset>
   <div class="warning"></div>
   <script type="text/javascript" src="assets/js/config.js"></script>
   <script src="assets/js/script.js"></script>

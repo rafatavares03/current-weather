@@ -10,11 +10,13 @@ document.querySelector('#searchForm').addEventListener('submit', async (event) =
     let json = await results.json();
 
     if (json.cod === 200) {
+      ShowWarning('Carregando...');
+      console.log(json);
       ShowResults({
-        name: json.name,
         country: json.sys.country,
         feels_like: json.main.feels_like,
         humidity: json.main.humidity,
+        name: json.name,
         pressure: json.main.pressure,
         temp: json.main.temp,
         temp_max: json.main.temp_max,
@@ -27,12 +29,12 @@ document.querySelector('#searchForm').addEventListener('submit', async (event) =
       ShowWarning(`Não foi possível localizar "${search}".`);
     }
   } else {
-    ShowWarning('Não é possível realizar essa pesquisa, tente novamente.')
+    ShowWarning('Não é possível realizar essa pesquisa, tente novamente.');
   }
 });
 
 function ShowResults(results) {
-  console.log(results);
+
 }
 
 function ShowWarning(message) {
