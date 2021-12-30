@@ -10,8 +10,8 @@ document.querySelector('#searchForm').addEventListener('submit', async (event) =
     let json = await results.json();
 
     if (json.cod === 200) {
-      ShowWarning('Carregando...');
-      console.log(json);
+      ShowWarning('Carregando...', 'block');
+
       ShowResults({
         country: json.sys.country,
         feels_like: json.main.feels_like,
