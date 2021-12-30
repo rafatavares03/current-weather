@@ -27,10 +27,12 @@ document.querySelector('#searchForm').addEventListener('submit', async (event) =
         wind_speed: json.wind.speed,
       })
     } else {
-      ShowWarning(`Não foi possível localizar "${search}".`);
+      ClearInfo();
+      ShowWarning(`Não foi possível localizar "${search}".`, 'block');
     }
   } else {
-    ShowWarning('Não é possível realizar essa pesquisa, tente novamente.');
+    ClearInfo();
+    ShowWarning('Não é possível realizar essa pesquisa, tente novamente.', 'block');
   }
 });
 
@@ -46,12 +48,18 @@ function ShowResults(results) {
   document.querySelector('.wind-speed').innerHTML = `Velocidade: ${results.wind_speed}m/s`;
   document.querySelector('.wind-deg').innerHTML = `Ângulo: ${results.wind_deg}º`;
   
-  ShowWarning('');
+  ClearInfo();
 
   document.querySelector('.results').style.visibility = 'visible';
 }
 
-function ShowWarning(message) {
+function ClearInfo() {
+  ShowWarning('', 'none');
+  document.querySelector('.results').style.visibility = 'hidden';
+}
+
+function ShowWarning(message, display) {
   const warning = document.querySelector('.warning');
+  warning.style.display = display;
   warning.innerHTML = message;
 }

@@ -50,3 +50,10 @@
     color: abs.$wind-legend-color;
   }
 }
+
+.warning {
+  color: abs.$warning-color;
+  display: abs.$warning-display;
+  font-size: abs.$warning-font-size;
+  padding: abs.$warning-margin;
+}

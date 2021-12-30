@@ -39,7 +39,7 @@ body .title {
   width: 100%;
 }
 .form .search:focus + .label-float, .form .search:not(:placeholder-shown) + .label-float {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   top: 0.2rem;
 }
 .form .label-float {
@@ -93,7 +93,7 @@ body .title {
 
 .temp h1 {
   color: #19e4ff;
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 .wind {
@@ -102,6 +102,13 @@ body .title {
 }
 .wind legend {
   color: #B3ECFD;
+}
+
+.warning {
+  color: #19e4ff;
+  display: none;
+  font-size: 1.5rem;
+  padding: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
