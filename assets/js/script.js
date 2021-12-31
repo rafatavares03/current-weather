@@ -1,4 +1,4 @@
-const key = config.MY_API_KEY;
+const key = MY_API_KEY;
 
 document.querySelector('#searchForm').addEventListener('submit', async (event) => {
   event.preventDefault();
