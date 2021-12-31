@@ -22,4 +22,9 @@ body {
     font-size: abs.$title-font-size;
     margin-bottom: abs.$title-margin;
   }
+
+  .desc {
+    color: abs.$desc-color;
+    margin-bottom: abs.$desc-margin;
+  }
 }

@@ -19,7 +19,11 @@ body {
 body .title {
   color: #19e4ff;
   font-size: calc(2rem + 2vw);
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+}
+body .desc {
+  color: #19e4ff;
+  margin-bottom: 0.8rem;
 }
 
 .form {
@@ -70,6 +74,7 @@ body .title {
   color: #B3ECFD;
   font-size: 1.3rem;
   font-weight: 600;
+  margin: auto;
 }
 
 .container {
@@ -89,6 +94,9 @@ body .title {
   font-size: 1.3rem;
   font-weight: 400;
   margin-bottom: 0.5rem;
+}
+.status h1::first-letter {
+  text-transform: uppercase;
 }
 
 .temp h1 {

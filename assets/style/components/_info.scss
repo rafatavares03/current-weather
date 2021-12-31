@@ -13,6 +13,7 @@
     color: abs.$city-color;
     font-size: abs.$city-font-size;
     font-weight: abs.$city-font-weight;
+    margin: abs.$city-margin;
   }
 }
 
@@ -32,6 +33,10 @@
     font-size: abs.$status-h1-font-size;
     font-weight: abs.$status-h1-font-weight;
     margin-bottom: abs.$status-h1-margin;
+
+    &::first-letter {
+      text-transform: abs.$status-h1-transform;
+    }
   }
 }
 

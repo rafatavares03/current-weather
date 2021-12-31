@@ -5,13 +5,14 @@ document.querySelector('#searchForm').addEventListener('submit', async (event) =
 
   let search = document.querySelector('#search').value;
   if (search !== '') {
+    ClearInfo();
+    ShowWarning('Carregando...', 'block');
+
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURI(search)}&appid=${key}&units=metric&lang=pt_br`;
     let results = await fetch(url);
     let json = await results.json();
 
     if (json.cod === 200) {
-      ShowWarning('Carregando...', 'block');
-
       ShowResults({
         country: json.sys.country,
         feels_like: json.main.feels_like,
@@ -25,7 +26,7 @@ document.querySelector('#searchForm').addEventListener('submit', async (event) =
         icon: json.weather[0].icon,
         wind_deg: json.wind.deg,
         wind_speed: json.wind.speed,
-      })
+      });
     } else {
       ClearInfo();
       ShowWarning(`Não foi possível localizar "${search}".`, 'block');
